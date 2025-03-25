@@ -3,47 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background with gradient mix */
+        body {
+            background: linear-gradient(to right, #2c3e50, #34495e); /* Dark Blue-Gray Mix */
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #222; /* Dark Gray */
+        }
+
+        /* Cards */
+        .card {
+            background-color: #444; /* Lighter Gray */
+            border: none;
+        }
+
+        /* Primary Button */
+        .btn-primary {
+            background-color: #ff6f00; /* Orange */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #e65c00;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-       
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>"Hi, Im Blen Ashagre, a Computer Science student with a strong passion for web development. I specialize in PHP, JavaScript, and frontend technologies like HTML and CSS. I have worked on projects like a Pet Management System and a To-Do App using JSON. My goal is to become a skilled full-stack developer and build impactful digital solutions. Feel free to check out my projects below!".</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-       
-
-        <div>
-            <h3>To-Do App with JSON</h3>
-            <p>A simple task manager that saves tasks using JSON files. Built with PHP and JavaScript.</p>
-            <p><a href="https://github.com/B13n9597/todo-app" target="_blank">View on GitHub</a></p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div>
-            <h3>Portfolio Website</h3>
-            <p>My personal portfolio showcasing my skills and projects. Created using HTML, CSS, and JavaScript.</p>
-            <p><a href="https://b13n9597.github.io/portfolio-for-blen/" target="_blank">Live Demo</a> | <a href="https://github.com/B13n9597/portfolio-for-blen/tree/master/javascript/portfolio" target="_blank">GitHub Repo</a></p>
+    <!-- About Me Section -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center">About Me</h2>
+        <p class="text-center">Hello! I'm Blen Ashagre, a 3rd student at AMERICAN COLLEGE OF TECHNOLOGY majoring in Computer Science. I have a strong passion for Web Development. In addition to my academic pursuits, I enjoy reading books, which helps me stay balanced and inspired. I am also actively seeking internship opportunities to gain real-world experience in my field Looking ahead, I aspire to become good web developer,and I am excited about the journey ahead!
+
+            Feel free to connect with me if you'd like to share ideas or collaborate!</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container py-5">
+        <h2 class="text-center">Project</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Developed a responsive personal portfolio website to showcase my project</p>
+                    </div>
+                </div>
+            </div>
+           
         </div>
+    </section>
 
-       
-    </section>
     
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: blen.ashagre9597@gmail.com </p>
-        <p>GitHub: <a href="https://github.com/B13n9597">B13n9597</a></p>
+    <!-- Skills Section -->
+<section id="skills" class="container py-5">
+    <h2 class="text-center">Skills</h2>
+    <ul class="text-center list-unstyled">
+        <li>Java (Data Structures & Algorithms)</li>
+        <li>Binary Search Tree (BST) & AVL Trees</li>
+        <li>Recursion & Dynamic Programming</li>
+        <li>Sorting & Searching Algorithms (Merge Sort, Quick Sort, Binary Search)</li>
+        <li>Object-Oriented Programming (OOP)</li>
+        
+    </ul>
+</section>
+
+
+   
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">Contact</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Blen Ashagre</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">blen.ashagre9597@gmail.com</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <div class="text-center mt-4">
+            <a href="#" class="text-white me-2">https://github.com/B13n9597</a>
+            <a href="#" class="text-white me-2">https://www.linkedin.com/in/blean-ashagre-142033298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</a>
+            <a href="#" class="text-white">https://x.com/Blen648184?t=6Nl0W3n-OpQj8fSDDfnxYA&s=35</a>
+        </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 Blen Ashagre</p>
-    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
